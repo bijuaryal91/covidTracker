@@ -1,0 +1,138 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    width: 400px;
+    height: 360px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+h1
+{
+    color: #4070F4;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 2px solid #A39696;
+    padding: 5px 0px;
+}
+.main
+{
+    padding: 20px;
+}
+.inputfields
+{
+    text-align: center;
+}
+.inputfields input
+{
+    padding: 5px;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.inputfields button
+{
+    background: rgba(64, 112, 244,0.9);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    width: 70px;
+    border-radius: 8px;
+}
+.inputfields button:hover
+{
+    background: rgb(64, 112, 244);
+}
+.result
+{
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    place-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.result div
+{
+    height: 60px;
+    width: 90px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 13px;
+}
+.result div span
+{
+    font-weight: bold;
+}
+.result div p
+{
+    padding-top: 10px;
+}
+.nc,.tc
+{
+    background:#A7FFFF;
+}
+.nr,.tr
+{
+    background:#E6F3C2;
+}
+.nd,.td
+{
+    background:#FCAAAA;
+}
+.footer
+{
+    text-align: center;
+    border-top: 2px solid #A39696;
+    width: 100%;
+    padding-top: 6px;
+}
+.footer span
+{
+    color: #4070F4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media(max-width:430px)
+{
+    .container
+    {
+        width:95% ;
+    }
+}
+@media(max-width:360px)
+{
+    .inputfields input
+    {
+        width: 65%;
+    }
+}
+@media(max-width:345px)
+{
+    .result div
+    {
+        margin: 5px;
+    }
+    .footer
+    {
+        margin-top: 20px;
+    }
+}
